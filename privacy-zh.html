@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>隐私政策 — ScanVault</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f8f9fa;color:#1a1a2e;line-height:1.7;padding:0}
+  .hero{background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:#fff;padding:60px 20px;text-align:center}
+  .hero h1{font-size:2.4rem;margin-bottom:10px}
+  .hero p{opacity:.9;font-size:1.1rem}
+  .container{max-width:760px;margin:0 auto;padding:40px 20px}
+  .section{margin-bottom:36px}
+  .section h2{font-size:1.3rem;color:#667eea;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #eef0f7}
+  .section p,.section li{color:#444;margin-bottom:8px}
+  .section ul{padding-left:24px}
+  .lang-switch{text-align:center;padding:20px;background:#fff;border-bottom:1px solid #eee}
+  .lang-switch a{display:inline-block;margin:0 8px;padding:6px 16px;background:#667eea;color:#fff;text-decoration:none;border-radius:20px;font-size:.9rem}
+  .lang-switch a:hover{background:#764ba2}
+  .contact{background:#f0f0ff;padding:20px;border-radius:12px;margin-top:20px}
+  .contact strong{color:#667eea}
+  footer{text-align:center;padding:30px 20px;color:#999;font-size:.85rem;border-top:1px solid #eee}
+  @media(max-width:600px){.hero h1{font-size:1.7rem}.container{padding:20px 16px}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🔒 隐私政策</h1>
+  <p>ScanVault — 您的文档仅保存在您的设备上。</p>
+</div>
+
+<div class="lang-switch">
+  <a href="index.html">English</a>
+  <a href="privacy-zh.html">中文</a>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h2>1. 我们收集的信息</h2>
+    <p><strong>ScanVault 不收集、传输或存储任何个人数据。</strong></p>
+    <p>我们不使用任何分析 SDK、追踪工具或收集用户数据的第三方服务。</p>
+    <p>ScanVault 存储的唯一数据保存在您的设备本地：</p>
+    <ul>
+      <li><strong>扫描的文档和图片</strong> — 保存在应用的私有目录中</li>
+      <li><strong>OCR 文字</strong> — 使用苹果设备端 Vision 框架本地处理</li>
+      <li><strong>应用设置</strong> — 通过 UserDefaults 本地存储</li>
+      <li><strong>购买收据</strong> — 通过 StoreKit 本地验证（无服务器通信）</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>2. 我们如何使用信息</h2>
+    <p>所有文档处理均在<strong>您的设备上100%本地完成</strong>。扫描的图片和提取的文字永远不会离开您的 iPhone 或 iPad。我们无法访问您的文档、照片或个人信息。</p>
+    <p>OCR 使用苹果设备端的 Vision 框架 — 不涉及任何云服务。</p>
+  </div>
+
+  <div class="section">
+    <h2>3. 数据共享</h2>
+    <p><strong>我们不与任何第三方共享数据。</strong> ScanVault 不包含任何广告 SDK、分析工具或第三方数据处理服务。您的扫描文档完全保密。</p>
+  </div>
+
+  <div class="section">
+    <h2>4. 第三方服务</h2>
+    <p>ScanVault 不集成任何收集数据的第三方服务，包括：</p>
+    <ul>
+      <li>无分析或追踪 SDK</li>
+      <li>无广告 SDK</li>
+      <li>无云存储服务</li>
+      <li>无社交媒体集成</li>
+      <li>无崩溃报告服务</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>5. Apple 服务</h2>
+    <p>ScanVault 使用以下 Apple 框架进行设备端处理：</p>
+    <ul>
+      <li><strong>AVFoundation</strong> — 相机访问用于文档扫描</li>
+      <li><strong>Vision</strong> — 设备端矩形检测和 OCR 文字识别</li>
+      <li><strong>PDFKit</strong> — 本地 PDF 生成</li>
+      <li><strong>StoreKit</strong> — 本地购买验证</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>6. 数据保留与删除</h2>
+    <p>所有数据保存在您的设备本地。删除数据的方式：</p>
+    <ul>
+      <li>直接删除 ScanVault 应用 — 所有本地数据随之删除</li>
+      <li>删除单个文档：打开应用 → 选择文档 → 删除</li>
+    </ul>
+    <p>我们没有服务器，因此我们这边没有任何数据需要删除。</p>
+  </div>
+
+  <div class="section">
+    <h2>7. 儿童隐私</h2>
+    <p>ScanVault 不会故意收集 13 岁以下儿童的信息。我们的应用是文档扫描工具，不针对儿童用户。</p>
+  </div>
+
+  <div class="section">
+    <h2>8. 政策变更</h2>
+    <p>如果我们更新此隐私政策，变更将发布在此页面。我们鼓励您定期查阅。</p>
+  </div>
+
+  <div class="contact">
+    <h2>9. 联系我们</h2>
+    <p>如果您对本隐私政策有任何疑问，请联系我们：</p>
+    <p>📧 <strong>675207752@163.com</strong></p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2026 ScanVault. 保留所有权利。</p>
+  <p>ScanVault 由 WingQing 出品。我们尊重您的隐私。</p>
+</footer>
+
+</body>
+</html>
