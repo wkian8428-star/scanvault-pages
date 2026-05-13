@@ -18,11 +18,9 @@ jobs:
 
       - name: Enable Pages via REST API
         run: |
-          echo "=== GITHUB_TOKEN available: $GITHUB_TOKEN ==="
-          echo "=== Token length: ${#GITHUB_TOKEN} ==="
-          # Try API directly
-          RESP=$(curl -s -o /tmp/resp.json -w "%{http_code}"             -X PUT             -H "Authorization: Bearer $GITHUB_TOKEN"             -H "Content-Type: application/json"             -d '{"source":{"branch":"main","path":"/"}}'             "https://api.github.com/repos/${{ github.repository }}/pages"))
-          echo "API response: $RESP"
+          set -x
+          curl -s -o /tmp/resp.json -w "HTTP_CODE:%{http_code}"             -X PUT             -H "Authorization: Bearer $GITHUB_TOKEN"             -H "Content-Type: application/json"             -d "{\"source\":{\"branch\":\"main\",\"path\":\"/\"}}"             "https://api.github.com/repos/$GITHUB_REPOSITORY/pages"
+          echo "Response:"
           cat /tmp/resp.json
 
       - name: Upload artifact
