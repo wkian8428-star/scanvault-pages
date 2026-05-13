@@ -16,9 +16,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Enable Pages via gh CLI
+      - name: Enable Pages via API
         run: |
+          # Authenticate gh with the GITHUB_TOKEN
+          echo "$GITHUB_TOKEN" | gh auth login github.com --with-token
           gh auth status
+          # Use gh pages enable
           gh pages enable --source "main"
 
       - name: Upload artifact
